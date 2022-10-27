@@ -1,0 +1,16 @@
+.input {
+  width: 835px;
+  height: 70px;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-right: 24px;
+  padding: 24px;
+  border: 3px solid #4F27BF;
+  outline:none;
+
+  @media(max-width: 768px) {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}

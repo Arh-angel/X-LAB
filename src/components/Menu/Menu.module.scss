@@ -1,0 +1,115 @@
+@import '../../assets/style/vars';
+
+.container {
+  position: fixed;
+  left: 0;
+  top: 80px;
+  width: 300px;
+  height: 100%;
+  padding-top: 24px;
+  padding-left: 32px;
+  background-color: $background-color;
+  box-shadow: 0 1px 5px 0 rgba(2, 0, 96, 0.25);
+  overflow-y: scroll;
+  z-index: 5;
+
+  @media(max-width: 768px) {
+    display: none;
+  }
+
+  & > .title {
+    font-size: $text-size;
+    font-weight: 700;
+    line-height: 24.38px;
+    margin-bottom: 32px;
+  }
+
+  & > .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    & > button {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      color: $title-color;
+      margin-bottom: 44px;
+
+      & > :first-child {
+        margin-right: 20px;
+      }
+
+      & > .openSettingsMenu {
+        margin-left: 67px;
+
+        & > svg {
+          transform: rotate(180deg);
+        }
+      }
+
+      & > .openMenu > svg {
+        transform: rotate(360deg); 
+      }
+
+      &:hover {
+        color: #4F27BF;
+      
+        & > svg > path {
+          fill: #4F27BF;
+        }
+      }
+      
+    }
+
+    & > .settingsMenu {
+      margin-left: 48px;
+
+      & > a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        color: $title-color;
+        margin-bottom: 44px;
+  
+        & > :first-child {
+          margin-right: 20px;
+        }
+
+        &:hover {
+          color: #4F27BF;
+
+          & > svg > path {
+            stroke: #4F27BF;
+          }
+        }
+      }
+    }
+
+    & > a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      color: $title-color;
+      margin-bottom: 44px;  
+
+      & > :first-child {
+        margin-right: 20px;
+      }
+
+      &:hover {
+        color: #4F27BF;
+
+        & > svg > path {
+          fill: #4F27BF;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+//colors
+$main-color: rgba(42, 47, 55, 0.02);
+$text-color: #FFFFFF;
+$title-color: #1C1C1E;
+$active-link-color: #aa9f9f;
+$background-color: #FFFFFF;
+
+//fonts
+$title: 'Montserrat', sans-serif;
+$text: 'Montserrat', sans-serif;
+
+//vars
+$title-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1920 - 320)));
+$text-size: 20px;

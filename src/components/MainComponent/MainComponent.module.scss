@@ -1,0 +1,21 @@
+@import '../../assets/style/vars';
+@import '../../assets/style/main';
+
+.container {
+  width: auto;
+  height: 100%;
+  padding: 32px;
+
+  & > .subtitle {
+    font-size: $text-size;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  & > .text {
+    color: $title-color;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+  }
+}

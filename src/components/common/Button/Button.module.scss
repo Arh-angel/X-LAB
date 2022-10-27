@@ -1,0 +1,34 @@
+@import '../../../assets/style/vars';
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 217px;
+  height: 70px;
+  background-color: #4F27BF;
+  border: none;
+  border-radius: 10px;
+  font-size: $title-size;
+  color: $text-color;
+  font-weight: 700;
+  line-height: 31.69px;
+
+  & > svg {
+    margin-right: 16px;
+  }
+
+  &:hover {
+    background-color: #FFFFFF;
+    border: 3px solid #4F27BF;
+    color: #4F27BF;
+
+    & > svg > path {
+      fill: #4F27BF
+    }
+  }
+
+  @media(max-width: 768px) {
+    width: 100%;
+  }
+}
